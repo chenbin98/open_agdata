@@ -1,38 +1,38 @@
-name: 推荐公开数据资源
-description: 补充农业、遥感与资源环境的数据集、网络或平台
-title: '[资源] '
+name: Suggest a public data resource
+description: Add an agriculture, remote-sensing or environmental dataset, network or platform
+title: '[Resource] '
 body:
   - type: input
     id: name
     attributes:
-      label: 资源名称与提供者
+      label: Resource name and provider
     validations:
       required: true
   - type: textarea
     id: links
     attributes:
-      label: 官方入口、DOI 与版本
-      description: 提供正式发布页，避免临时下载链接。
+      label: Official entry point, DOI and version
+      description: Link a formal release page rather than a temporary download URL.
     validations:
       required: true
   - type: textarea
     id: coverage
     attributes:
-      label: 变量、范围、时间和分辨率
-      description: 区分实测、统计、遥感或模型推导，未知信息请注明。
+      label: Variables, coverage and resolution
+      description: Distinguish observations, statistics, remote sensing and model estimates. State unknowns.
     validations:
       required: true
   - type: textarea
     id: access
     attributes:
-      label: 访问条件和数据许可
-      description: 是否需要账户、API 密钥、付费或申请？请附许可来源，未核对也可说明。
+      label: Access conditions and data licence
+      description: Does access require an account, key, payment or application? Link the licence or state that it is unchecked.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: 核实来源与使用经验
-      description: 说明读了哪些一手资料，是否实际下载，存在什么限制。
+      label: Evidence and experience
+      description: Which primary sources did you read? Did you download data? What limitations remain?
     validations:
       required: true

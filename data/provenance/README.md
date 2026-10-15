@@ -1,11 +1,11 @@
-# 首批源元数据摘录
+# Initial source-metadata extracts
 
-2026-10-15 通过正式 Zenodo、Figshare API 与 DataCite DOI 注册 API 获取。JSON 保存所选标题、DOI、日期、版本、许可及部分文件名/大小/发布方校验值，不是完整原始响应；失败请求也保留错误摘要。用于支持首版核实及解释元数据之间的差异。
+Retrieved on 2026-10-15 using official Zenodo, Figshare and DataCite APIs. JSON files retain selected titles, DOIs, dates, versions, licences and file names/sizes/provider checksums. They are extracts, not complete raw responses; failed requests retain brief error records. They support the initial review and document differences between metadata sources.
 
-- `initial-source-metadata.json`：给定 Zenodo / Figshare 记录的 API 读取结果。
-- `datacite-metadata.json`：对应概念 DOI 的注册信息摘录。
-- `additional-metadata.json`：冬小麦 `.v2` 和配套降水 DOI 的注册信息摘录。
+- `initial-source-metadata.json`: API retrievals for the supplied Zenodo and Figshare records.
+- `datacite-metadata.json`: DOI registration metadata for the corresponding concept DOIs.
+- `additional-metadata.json`: winter-wheat `.v2` and companion precipitation DOI metadata.
 
-发布方提供的文件 MD5 未经本仓库重新下载验证；不能把它当作本地文件的校验结果。`version: null` 表示该元数据接口未提供版本字段，不表示数据没有版本。正式使用应固定实际文件、版本、许可与获取日期。
+Provider-reported MD5 values have not been verified by downloading complete files. A `null` version means the selected API field did not contain a version, not that the resource has no versions. Fix actual files, versions, licences and retrieval dates in research workflows.
 
-原始发布元数据保留原权利及许可，不因存入此目录而改变；首版不保存完整摘要、作者联系方式或原始栅格文件。未对全部平台保存页面快照，各条目另外列有官方说明来源。
+Original release metadata retain their original rights and licences. Full abstracts, author contact information and raw rasters are not stored. Other official sources are linked from resource cards; page snapshots were not captured for every platform. Source excerpts retain their original language rather than being rewritten during localization.

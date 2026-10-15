@@ -1,22 +1,22 @@
-name: 修正资源或报告访问变化
-description: 报告参数、许可、版本、失效链接或数据可用性问题
-title: '[修正] '
+name: Correct a resource or report an access change
+description: Report parameter, licence, version, URL or availability issues
+title: '[Correction] '
 body:
   - type: input
     id: resource
     attributes:
-      label: 资源 ID 或链接
+      label: Resource ID or URL
     validations:
       required: true
   - type: textarea
     id: issue
     attributes:
-      label: 问题与复现方式
-      description: 请说明日期、页面/接口、错误或冲突内容；不要填写密码、令牌或个人账户信息。
+      label: Problem and reproduction steps
+      description: Include date, page/API route and the error or conflicting information. Do not include credentials or personal account information.
     validations:
       required: true
   - type: textarea
     id: evidence
     attributes:
-      label: 建议修正与官方证据
-      description: 如有正式迁移说明、新版 DOI 或许可变更，请提供出处。
+      label: Suggested correction and official evidence
+      description: Link a formal migration notice, new DOI or licence update if available.

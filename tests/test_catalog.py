@@ -76,6 +76,56 @@ class CatalogContract(unittest.TestCase):
         self.assertIn('README.md', result.stderr)
         self.assertEqual(target.read_text(encoding='utf-8'), 'stale export\n')
 
+    def write_translation(self, english=FIXTURE):
+        localized = copy.deepcopy(english)
+        localized['language'] = 'zh-CN'
+        localized['resources'][0]['name'] = '中文资源'
+        (self.root / 'data/resources.zh-CN.json').write_text(
+            json.dumps(localized, ensure_ascii=False), encoding='utf-8')
+        return localized
+
+    def test_english_default_and_linked_chinese_outputs(self):
+        english = copy.deepcopy(FIXTURE)
+        english['resources'][0]['name'] = 'Sample climate'
+        self.write_translation(english)
+        result = self.run_catalog(english)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        default = (self.root / 'README.md').read_text(encoding='utf-8')
+        self.assertIn('## Browse by category', default)
+        self.assertIn('README.zh-CN.md', default)
+        self.assertIn('docs/catalog.md#sample-data', default)
+        self.assertIn('assets/open-agdata-logo.png', default)
+        chinese = (self.root / 'README.zh-CN.md').read_text(encoding='utf-8')
+        self.assertIn('中文资源', chinese)
+        self.assertIn('docs/catalog.zh-CN.md#sample-data', chinese)
+        self.assertIn('README.md', chinese)
+        self.assertIn('中文资源', (self.root / 'docs/catalog.zh-CN.md').read_text(encoding='utf-8'))
+
+    def test_translation_cannot_change_identity_evidence_or_check_date(self):
+        for field in ('id', 'source_url', 'checked_on'):
+            with self.subTest(field=field):
+                localized = self.write_translation()
+                row = localized['resources'][0]
+                if field == 'id': row['id'] = 'other-resource'
+                elif field == 'source_url': row['verification']['sources'][0]['url'] = 'https://example.org/other'
+                else: row['verification']['checked_on'] = '2026-10-14'
+                (self.root / 'data/resources.zh-CN.json').write_text(json.dumps(localized), encoding='utf-8')
+                result = self.run_catalog(FIXTURE)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn('translation', result.stderr)
+                self.assertFalse((self.root / 'README.md').exists())
+
+    def test_check_catches_stale_chinese_export(self):
+        self.write_translation()
+        result = self.run_catalog(FIXTURE)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        target = self.root / 'README.zh-CN.md'
+        target.write_text('stale Chinese export', encoding='utf-8')
+        result = self.run_catalog(None, '--check')
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('README.zh-CN.md', result.stderr)
+        self.assertEqual(target.read_text(encoding='utf-8'), 'stale Chinese export')
+
     def test_malformed_source_url_and_date_rejected(self):
         for field, value in [('url', 'https://example.org/”'), ('checked_on', 'tomorrow')]:
             with self.subTest(field=field):

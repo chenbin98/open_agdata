@@ -1,17 +1,18 @@
-# 贡献指南
+# Contributing
 
-欢迎补充农业、遥感、资源环境的公开数据、站点网络和获取平台，也欢迎纠正参数、补充许可或报告链接变化。可以使用 Issue 模板提报，不必先学习 JSON。
+Help improve public data discovery for agriculture, remote sensing and the environment. Suggest datasets, observation networks or platforms, report access changes, or correct coverage and licence information. The Issue templates are available if you prefer not to edit JSON.
 
-## 收录范围
+## Scope
 
-优先收录来源可追溯、具有明确元数据、可说明访问条件与许可的资源。覆盖研究数据与公共平台；商业平台承载的公开资源也可以收录，但应说明免费范围。只提供营销页面、无数据身份或无法合法获取的镜像不作为已核对资源推荐。
+Prefer traceable resources with useful metadata, documented access conditions and an identifiable licence. Public datasets hosted by commercial platforms are welcome when their free-access limits are clear. Marketing-only pages and unidentified or unauthorized mirrors are not recommended as reviewed resources.
 
-## 用 Pull Request 补充
+## Submit a pull request
 
-1. 在 `data/resources.json` 中新增或修改条目，参考[数据字典](docs/data-dictionary.md)。选择稳定 ID，复用现有分类；后续新增资源的 `seed_refs` 使用 `["community"]`。
-2. 尽量阅读官方发布记录、方法说明和许可，记录具体版本/DOI、范围、分辨率、账户或密钥要求。不能确认时写清楚原因，使用 `partial` 或 `pending`。
-3. 在 `verification.sources` 给出来源和它支撑的字段。使用文档核对日期，不因重新生成文件而刷新日期。
-4. 运行并提交生成结果：
+1. Add or update the English canonical record in `data/resources.json`, following the [data dictionary](docs/data-dictionary.md). Use a stable ID and an existing category. For new community resources, set `seed_refs` to `["community"]`.
+2. Update the corresponding record in `data/resources.zh-CN.json`. Translations must keep the same IDs, classifications, evidence and entry URLs, licence URLs, registration codes, review statuses and review dates. Missing or conflicting translations fail validation.
+3. Read official release metadata, methods and licence information. Record the actual version/DOI, coverage, resolution and account/key requirements. Use `partial` or `pending` and explain anything not confirmed.
+4. In `verification.sources`, link evidence and state which fields it supports. Keep the date of the source review; regenerating or translating files does not refresh that date.
+5. Generate and check all outputs:
 
    ```bash
    python3 scripts/catalog.py
@@ -19,15 +20,16 @@
    python3 -m unittest discover -s tests -v
    ```
 
-5. PR 描述列出新增/修正内容、核实来源与仍存在的限制。更改数据范围、访问条件或许可时解释证据。
+6. Commit both metadata files and generated READMEs, resource cards and CSV. In the PR description, list the resource IDs, evidence, changes and remaining limitations.
 
-## 编辑约定
+## Editing conventions
 
-- 数据集、平台、网络区别记录；同一产品多入口放入同一个条目的 `links`，不同作物、深度或版本有实质差异时说明范围。
-- 不写无法复核的“最高精度”“一键秒级”“全部免注册”等宣传语。
-- 将免费访问、许可范围、平台服务条款分开。未知许可不按公共领域或 CC BY 处理。
-- 记录产品是观测、统计、模型同化、插值还是遥感/机器学习估计；避免训练数据与验证数据的信息复用。
-- 不向本仓库提交大体积原始数据、访问令牌、账户密码或临时签名 URL。提供官方入口和可持续使用的元数据。
-- 发现 403、超时或重定向时先记录读取方式与现象，确认正式迁移后再改链接，不凭一次失败删除资源。
+- English is the repository default. Use `README.zh-CN.md` and `docs/catalog.zh-CN.md` for Chinese navigation and resource cards; both versions link to each other.
+- Distinguish datasets, networks and platforms. Put alternate entry points for one product in `links`; describe meaningful crop, depth and version differences explicitly.
+- Avoid unverified claims such as universal registration-free access, guaranteed processing speed or highest accuracy.
+- Describe free access, data licences and service terms separately. An unknown licence does not imply public-domain or CC BY status.
+- State whether a product uses observations, statistics, assimilation, interpolation or remote-sensing/machine-learning estimates. Note shared training and evaluation inputs where relevant.
+- Keep large raw datasets, credentials and temporary signed URLs out of the repository. Link official sources and durable metadata instead.
+- Record the method and date of a failed request. Confirm an official migration before replacing URLs; a single 403 or timeout is not enough to delete a resource.
 
-原创文字与人工整理的目录元数据按 CC BY 4.0 贡献，脚本和测试按 MIT 贡献；外部数据及原始元数据保留其原许可与权利。
+Original text and curated metadata are contributed under CC BY 4.0; scripts and tests under MIT. External datasets and original release metadata retain their own rights and licences.

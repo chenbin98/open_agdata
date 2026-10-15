@@ -1,14 +1,15 @@
-## 改动
+## Change
 
-说明新增或修改的资源 ID，以及范围、访问或许可变化。
+List resource IDs and any coverage, access or licence changes.
 
-## 核实依据
+## Evidence
 
-列出官方说明、发布记录或 DOI；说明未核对或有冲突的内容。
+Link official documentation, release records or DOIs. State unresolved or conflicting information.
 
-## 检查
+## Checks
 
-- [ ] 资源信息修改于 `data/resources.json`，已重新生成导航、卡片和 CSV
+- [ ] Updated English canonical metadata and the Chinese localization
+- [ ] Regenerated both READMEs, both resource catalogs and the English CSV
 - [ ] `python3 scripts/catalog.py --check`
 - [ ] `python3 -m unittest discover -s tests -v`
-- [ ] 未提交原始大文件、凭据或临时签名链接
+- [ ] No large raw files, credentials or temporary signed URLs

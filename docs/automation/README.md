@@ -1,8 +1,8 @@
-# 启用 GitHub Actions
+# Enable GitHub Actions
 
-目录附有工作流模板 [catalog.yml](catalog.yml)。启用后会在推送和 PR 中检查资源格式、生成一致性与目录测试。
+The [catalog.yml](catalog.yml) template runs metadata validation, generated-file checks and catalog tests on pushes and pull requests.
 
-将模板复制至 `.github/workflows/catalog.yml`，使用可写入 GitHub Actions 工作流的凭据提交即可。OAuth/Classic PAT 通常需要 `workflow` 权限；应按自己的凭据类型核对授权。本仓库初版将配置保留为模板，尚未启用线上工作流。
+Copy it to `.github/workflows/catalog.yml` and commit with credentials authorized to write GitHub Actions workflows. OAuth/classic PAT credentials generally need the `workflow` scope; check the requirements for your credential type. Online workflows are not enabled in this repository’s initial setup.
 
 ```bash
 mkdir -p .github/workflows
@@ -12,7 +12,7 @@ git commit -m "Enable catalog checks"
 git push
 ```
 
-在启用之前也可以本地运行同样的检查：
+The same checks can run locally:
 
 ```bash
 python3 scripts/catalog.py --check
