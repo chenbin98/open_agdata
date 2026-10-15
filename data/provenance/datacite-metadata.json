@@ -1,0 +1,198 @@
+{
+  "10.6084/m9.figshare.12003990": {
+    "source": "https://api.datacite.org/dois/10.6084/m9.figshare.12003990",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "doi": "10.6084/m9.figshare.12003990",
+      "titles": [
+        {
+          "title": "30m winter wheat distribution map of China for four years (2016-2019)"
+        }
+      ],
+      "publisher": "figshare",
+      "publicationYear": 2020,
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "Creative Commons Zero v1.0 Universal",
+          "rightsUri": "https://creativecommons.org/publicdomain/zero/1.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc0-1.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "url": "https://figshare.com/articles/figure/30m_winter_wheat_distribution_map_of_China_for_three_years_2016-2018_/12003990",
+      "relatedIdentifiers": [],
+      "dates": [
+        {
+          "date": "2020-03-19",
+          "dateType": "Created"
+        },
+        {
+          "date": "2020-10-18",
+          "dateType": "Updated"
+        },
+        {
+          "date": "2020",
+          "dateType": "Issued"
+        }
+      ]
+    },
+    "earlier_attempt_error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.datacite.org:443"
+  },
+  "10.6084/m9.figshare.8313530": {
+    "source": "https://api.datacite.org/dois/10.6084/m9.figshare.8313530",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "doi": "10.6084/m9.figshare.8313530",
+      "titles": [
+        {
+          "title": "ChinaCropPhen1km: A high-resolution crop phenological dataset for three staple crops in China during 2000-2019 based on LAI products"
+        }
+      ],
+      "publisher": "figshare",
+      "publicationYear": 2021,
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "url": "https://figshare.com/articles/dataset/ChinaCropPhen1km_A_high-resolution_crop_phenological_dataset_for_three_staple_crops_in_China_during_2000-2015_based_on_LAI_products/8313530/5",
+      "relatedIdentifiers": [],
+      "dates": [
+        {
+          "date": "2021-09-29",
+          "dateType": "Created"
+        },
+        {
+          "date": "2021-09-29",
+          "dateType": "Updated"
+        },
+        {
+          "date": "2021",
+          "dateType": "Issued"
+        }
+      ]
+    }
+  },
+  "10.6084/m9.figshare.16437054": {
+    "source": "https://api.datacite.org/dois/10.6084/m9.figshare.16437054",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "doi": "10.6084/m9.figshare.16437054",
+      "titles": [
+        {
+          "title": "A 30-m annual maize phenology dataset from 1985 to 2020 in China"
+        }
+      ],
+      "publisher": "figshare",
+      "publicationYear": 2021,
+      "version": null,
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "url": "https://figshare.com/articles/dataset/A_30-m_annual_maize_phenology_dataset_from_1985_to_2020_in_China/16437054",
+      "relatedIdentifiers": [],
+      "dates": [
+        {
+          "date": "2021-10-06",
+          "dateType": "Created"
+        },
+        {
+          "date": "2021-10-06",
+          "dateType": "Updated"
+        },
+        {
+          "date": "2021",
+          "dateType": "Issued"
+        }
+      ]
+    },
+    "earlier_attempt_error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.datacite.org:443"
+  },
+  "10.5281/zenodo.4417809": {
+    "source": "https://api.datacite.org/dois/10.5281/zenodo.4417809",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "doi": "10.5281/zenodo.4417809",
+      "titles": [
+        {
+          "title": "The 30 m annual land cover datasets and its dynamics in China from 1985 to 2025"
+        }
+      ],
+      "publisher": "Zenodo",
+      "publicationYear": 2026,
+      "version": "1.0.5",
+      "rightsList": [
+        {
+          "rights": "Creative Commons Attribution 4.0 International",
+          "rightsUri": "https://creativecommons.org/licenses/by/4.0/legalcode",
+          "schemeUri": "https://spdx.org/licenses/",
+          "rightsIdentifier": "cc-by-4.0",
+          "rightsIdentifierScheme": "SPDX"
+        }
+      ],
+      "url": "https://zenodo.org/doi/10.5281/zenodo.4417809",
+      "relatedIdentifiers": [
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.4417810",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.12779975",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.15853565",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.5210928",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.5816591",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.8176941",
+          "relatedIdentifierType": "DOI"
+        },
+        {
+          "relationType": "HasVersion",
+          "relatedIdentifier": "10.5281/zenodo.18180184",
+          "relatedIdentifierType": "DOI"
+        }
+      ],
+      "dates": [
+        {
+          "date": "2026-01-08",
+          "dateType": "Issued"
+        }
+      ]
+    }
+  },
+  "10.5281/zenodo.3185722": {
+    "source": "https://api.datacite.org/dois/10.5281/zenodo.3185722",
+    "retrieved_on": "2026-10-15",
+    "error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.datacite.org:443",
+    "second_attempt_error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  }
+}

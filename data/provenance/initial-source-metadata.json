@@ -1,0 +1,337 @@
+{
+  "zenodo-4417809": {
+    "source": "https://zenodo.org/api/records/4417809",
+    "retrieved_on": "2026-10-15",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+    "second_attempt_error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to zenodo.org:443"
+  },
+  "zenodo-22023328": {
+    "source": "https://zenodo.org/api/records/22023328",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "title": "A national 30-m crop yield dataset for major staple crops in China for 2024",
+      "doi": "10.5281/zenodo.22023328",
+      "publication_date": "2026-08-20",
+      "version": null,
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "related_identifiers": null,
+      "files": [
+        {
+          "name": "Maize_yield_2024.zip",
+          "size": 5220295578,
+          "checksum": "md5:4169620567995b199dde52b1d1a9a4f4"
+        },
+        {
+          "name": "Rice_yield_2024.zip",
+          "size": 2537663966,
+          "checksum": "md5:be916392e15d17b9ec11102e58974600"
+        },
+        {
+          "name": "WinterWheat_yield_2024.zip",
+          "size": 1695944879,
+          "checksum": "md5:8c75650a26a420fd2b212477e1a099b5"
+        },
+        {
+          "name": "rice_start_DOY.tif",
+          "size": 850201189,
+          "checksum": "md5:4cd8b311acac07442484a2458f6bdd48"
+        },
+        {
+          "name": "rice_end_DOY.tif",
+          "size": 849871673,
+          "checksum": "md5:995201a550cc8613cbc0b2a900b440fd"
+        },
+        {
+          "name": "maize_start_DOY.tif",
+          "size": 567192375,
+          "checksum": "md5:28cbf089d6f8021edc1d1a897b279e83"
+        },
+        {
+          "name": "maize_end_DOY.tif",
+          "size": 951615946,
+          "checksum": "md5:ce08a529e10f21defacb451dc1e883cc"
+        },
+        {
+          "name": "winterwheat_start_DOY.tif",
+          "size": 580987922,
+          "checksum": "md5:36a750733179e8833cadddc4bce4c4b1"
+        },
+        {
+          "name": "winterwheat_end_DOY.tif",
+          "size": 581008307,
+          "checksum": "md5:0866cf466e72e18a76213c90702485ec"
+        },
+        {
+          "name": "calibration of HI.csv",
+          "size": 231,
+          "checksum": "md5:f6d66503916a3ed0b07ecce0f0bb1fc4"
+        },
+        {
+          "name": "Codes.zip",
+          "size": 9109,
+          "checksum": "md5:52fadc7f982900c1d24b2c177538b0eb"
+        }
+      ]
+    },
+    "earlier_attempt_error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>"
+  },
+  "zenodo-18446149": {
+    "source": "https://zenodo.org/api/records/18446149",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "title": "Spatial distribution maps (10 m) and high-confidence samples of major-crop in Northeast China from 2017 to 2025",
+      "doi": "10.5281/zenodo.18446149",
+      "publication_date": "2026-03-05",
+      "version": "2026",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "related_identifiers": null,
+      "files": [
+        {
+          "name": "2017-2025 Samples and Maps of major-crop.7z",
+          "size": 3300096334,
+          "checksum": "md5:c9c636aeea5df80913f427f97ee3af3f"
+        }
+      ]
+    }
+  },
+  "zenodo-7582755": {
+    "source": "https://zenodo.org/api/records/7582755",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "title": "ChinaCropSM 1km: a fine 1 km daily Soil Moisture dataset for dryland wheat and maize across China during 1993–2018",
+      "doi": "10.5281/zenodo.7582755",
+      "publication_date": "2023-01-30",
+      "version": "wheat0-10cm",
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "related_identifiers": null,
+      "files": [
+        {
+          "name": "2006.zip",
+          "size": 1436697408,
+          "checksum": "md5:0ad9b7f2edf5c9e236a0f869aeb193fc"
+        },
+        {
+          "name": "2015.zip",
+          "size": 1322875680,
+          "checksum": "md5:d57236e4360ae370a4e4f2ed48ec1cf1"
+        },
+        {
+          "name": "2010.zip",
+          "size": 1419245103,
+          "checksum": "md5:e90aaea52512d73692deb09a24c83c0c"
+        },
+        {
+          "name": "2009.zip",
+          "size": 1423880335,
+          "checksum": "md5:4d944be8490fc9850e128a727674b47d"
+        },
+        {
+          "name": "2017.zip",
+          "size": 1308466902,
+          "checksum": "md5:765d9a5431855488da41315d8041b24e"
+        },
+        {
+          "name": "2013.zip",
+          "size": 1796247474,
+          "checksum": "md5:5b14c25cd9778a981279a7d774b60752"
+        },
+        {
+          "name": "1997.zip",
+          "size": 1453244796,
+          "checksum": "md5:1b2fbfa0dae19b39baa5b7b21fa3aedf"
+        },
+        {
+          "name": "1996.zip",
+          "size": 1449583359,
+          "checksum": "md5:5a6f4c17e998a4bbd4579a225d87b702"
+        },
+        {
+          "name": "2018.zip",
+          "size": 1301466998,
+          "checksum": "md5:ad164c445a54b3ade52a12458a2b4ea7"
+        },
+        {
+          "name": "1998.zip",
+          "size": 1433004980,
+          "checksum": "md5:69e241fae723d7b1173d56501e34741c"
+        },
+        {
+          "name": "2016.zip",
+          "size": 1323392834,
+          "checksum": "md5:aad585d07ca7f9bf440a295a87701caf"
+        },
+        {
+          "name": "2014.zip",
+          "size": 1678458374,
+          "checksum": "md5:e97d2e909ee2bd89da718d001fd87cc8"
+        },
+        {
+          "name": "2008.zip",
+          "size": 1442566220,
+          "checksum": "md5:48e13ec3585f9c92f4a4db163822d4c0"
+        },
+        {
+          "name": "1995.zip",
+          "size": 1442267757,
+          "checksum": "md5:302a9c59c0a505dc92eb174a4eca86b3"
+        },
+        {
+          "name": "1994.zip",
+          "size": 1432601556,
+          "checksum": "md5:cbd4d79cb04bfb2abc4a0e916c19cdf4"
+        },
+        {
+          "name": "1993.zip",
+          "size": 1426807094,
+          "checksum": "md5:768165b4e34d85fdb29898fd327617f3"
+        },
+        {
+          "name": "2005.zip",
+          "size": 1426038095,
+          "checksum": "md5:78ac1233d1db8a24c5798872bb9447ad"
+        },
+        {
+          "name": "2012.zip",
+          "size": 1796351042,
+          "checksum": "md5:cfacecafc9f3a2e3d91458795b532ff7"
+        },
+        {
+          "name": "2007.zip",
+          "size": 1437149628,
+          "checksum": "md5:8c861b0a392b7ac8ef81a54317219638"
+        },
+        {
+          "name": "2004.zip",
+          "size": 1456175265,
+          "checksum": "md5:f23e9b014e1378741a547c0d74f38566"
+        },
+        {
+          "name": "1999.zip",
+          "size": 1454006368,
+          "checksum": "md5:d694672fc56562600d905bf8afe2fd92"
+        },
+        {
+          "name": "2000.zip",
+          "size": 1447901449,
+          "checksum": "md5:5940dd02107f6200f1c8e6df02502ad9"
+        },
+        {
+          "name": "2001.zip",
+          "size": 1449575005,
+          "checksum": "md5:de81928ca67f4b727f7bbfd8ae3b2393"
+        },
+        {
+          "name": "2003.zip",
+          "size": 1439870075,
+          "checksum": "md5:67d5f56c37a1dea074486d5e9a8518cc"
+        },
+        {
+          "name": "2002.zip",
+          "size": 1445921310,
+          "checksum": "md5:e8a2ddd01c2fc4f7b27959b779eabf9e"
+        },
+        {
+          "name": "2011.zip",
+          "size": 1787093830,
+          "checksum": "md5:bc9f2aea8b28864804aad937ce949d07"
+        }
+      ]
+    }
+  },
+  "zenodo-3185722": {
+    "source": "https://zenodo.org/api/records/3185722",
+    "retrieved_on": "2026-10-15",
+    "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)>",
+    "second_attempt_error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to zenodo.org:443"
+  },
+  "zenodo-10963932": {
+    "source": "https://zenodo.org/api/records/10963932",
+    "retrieved_on": "2026-10-15",
+    "metadata": {
+      "title": "CDMet: 4 km daily gridded meteorological dataset for China from 2000 to 2020",
+      "doi": "10.5281/zenodo.10963932",
+      "publication_date": "2024-04-12",
+      "version": null,
+      "license": {
+        "id": "cc-by-4.0"
+      },
+      "related_identifiers": null,
+      "files": [
+        {
+          "name": "Mean Temperature.zip",
+          "size": 5257876532,
+          "checksum": "md5:8033eafa572c1ffbafc7568a2aad0ba7"
+        },
+        {
+          "name": "Skin Temperature.zip",
+          "size": 4141266357,
+          "checksum": "md5:f82e37499d734f4d34c783477a320a40"
+        },
+        {
+          "name": "Sunshine Duration.zip",
+          "size": 2352865528,
+          "checksum": "md5:f04d2b050d33d420db5bfd034a5493f7"
+        },
+        {
+          "name": "Surface Pressure.zip",
+          "size": 7204248577,
+          "checksum": "md5:dfe62100ca7b2d9b03da106415589800"
+        },
+        {
+          "name": "Wind Speed.zip",
+          "size": 4650039544,
+          "checksum": "md5:0f2e75a5cdc3f5ce0c3a0b4afb6244d1"
+        },
+        {
+          "name": "Data Information for the CDMet.txt",
+          "size": 1927,
+          "checksum": "md5:e02454fca6da3c86a9f23d3173419b81"
+        },
+        {
+          "name": "Relative humidity.zip",
+          "size": 5108631021,
+          "checksum": "md5:1d8df87315f740b96f0f6b42639af79c"
+        },
+        {
+          "name": "Maximum Temperature.zip",
+          "size": 4164368093,
+          "checksum": "md5:66e2926f4ae7312947473f5656c52524"
+        },
+        {
+          "name": "Minimum Temperature.zip",
+          "size": 4264625603,
+          "checksum": "md5:df43b9c0f80241b547603e6aa97f00c6"
+        },
+        {
+          "name": "Total Precipitation.zip",
+          "size": 1222250877,
+          "checksum": "md5:1af91703e59c176a80c80d3493a26b00"
+        }
+      ]
+    }
+  },
+  "figshare-12003990": {
+    "source": "https://api.figshare.com/v2/articles/12003990",
+    "retrieved_on": "2026-10-15",
+    "error": "HTTP Error 403: Forbidden",
+    "second_attempt_error": "curl: (56) The requested URL returned error: 403"
+  },
+  "figshare-8313530": {
+    "source": "https://api.figshare.com/v2/articles/8313530",
+    "retrieved_on": "2026-10-15",
+    "error": "HTTP Error 403: Forbidden",
+    "second_attempt_error": "curl: (35) LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to api.figshare.com:443"
+  },
+  "figshare-16437054": {
+    "source": "https://api.figshare.com/v2/articles/16437054",
+    "retrieved_on": "2026-10-15",
+    "error": "HTTP Error 403: Forbidden",
+    "second_attempt_error": "curl: (56) The requested URL returned error: 403"
+  }
+}
